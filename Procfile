@@ -1,1 +1,1 @@
-web: gunicorn Flask(__name__):main_app
+web: sh setup.sh && streamlit run main_app.py
