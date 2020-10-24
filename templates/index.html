@@ -1,0 +1,57 @@
+<html>
+<head>
+  <title>First Web App </title>
+</head>
+	
+<body>
+ <div>
+    <h1>Diabetes Prediction</h1>
+	   <div class="container class forms">
+		<form action="/result" method="POST" enctype="multipart/form-data">
+		 <div class="row">
+            <div class="col-sm-6">
+              <div class="input-group  mb-3">
+                <div class="input-group-prepend ">
+			     <input type ="text" name="Pregnancies" placeholder="Pregnancies" required="required" />
+			<div class="input-group  mb-3">
+                <div class="input-group-prepend ">
+			     <input type ="text" name="Glucose" placeholder="Glucose" required="required" />
+			<div class="input-group  mb-3">
+                <div class="input-group-prepend ">
+			     <input type ="text" name="BloodPressure" placeholder="BloodPressure" required="required" />
+			<div class="input-group  mb-3">
+                <div class="input-group-prepend ">
+			     <input type ="text" name="SkinThickness" placeholder="SkinThickness" required="required" />
+			<div class="input-group  mb-3">
+                <div class="input-group-prepend ">
+			     <input type ="text" name="Insulin" placeholder="Insulin" required="required" />
+			<div class="input-group  mb-3">
+                <div class="input-group-prepend ">
+			     <input type ="text" name="BMI" placeholder="BMI" required="required" />
+			<div class="input-group  mb-3">
+                <div class="input-group-prepend ">
+			     <input type ="text" name="DiabetesPedigreeFunction" placeholder="DiabetesPedigreeFunction" required="required" />
+			<div class="input-group  mb-3">
+                <div class="input-group-prepend ">
+			     <input type ="text" name="Age" placeholder="Age" required="required" />	
+			<button type="submit" class="btn btn-primary btn-block btn-large">result</button>
+		</form>
+		
+		<br>
+		<br>
+		 
+		   <div class="modal-body">
+            {{result}}
+            {% if result==1 %}
+            <hr>
+            <h3>Anda diprediksi Diabetes</h3>
+            {% else %}
+			<hr>
+            <h3>Anda Tidak diprediksi Diabetes</h3>
+            {% endif %}
+			<div/>
+		
+ </div>
+ 
+<body>
+</html>
